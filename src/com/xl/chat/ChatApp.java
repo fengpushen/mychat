@@ -7,7 +7,7 @@ import org.red5.server.api.IClient;
 import org.red5.server.api.IConnection;
 import org.red5.server.api.scope.IScope;
 
-public class ChatApp extends ApplicationAdapter {
+public class ChatApp extends ApplicationAdapter { 
 
 	/*
 	 * 第一个程序
