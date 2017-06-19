@@ -5,7 +5,7 @@ import org.red5.server.api.stream.IStreamFilenameGenerator;
 
 public class PathBean implements IStreamFilenameGenerator {
 
-	public String recordPath = "streams/";
+	public String recordPath = "streams/"; 
 	public String playbackPath = "streams/";
 
 	public String generateFilename(IScope scope, String name, GenerationType type) {
