@@ -23,7 +23,7 @@ public class ChatApp extends ApplicationAdapter {
 	 * 服务器调用客户端程序，接收客户端的返回值，服务器遍历当前所有连接
 	 * 
 	 * @Override public boolean appConnect(IConnection arg0, Object[] arg1) { //
-	 * TODO Auto-generated method stub // callClient(arg0);
+	 *  // callClient(arg0);
 	 * this.callEvery(arg0.getScope()); return true; }
 	 * 
 	 * private void callEvery(IScope scope) { Iterator<IConnection> it =
@@ -54,7 +54,7 @@ public class ChatApp extends ApplicationAdapter {
 	 * System.out.println("point 是null"); return true; }
 	 * 
 	 * @Override public void resultReceived(IPendingServiceCall
-	 * ipendingservicecall) { // TODO Auto-generated method stub
+	 * ipendingservicecall) { 
 	 * 
 	 * }
 	 */

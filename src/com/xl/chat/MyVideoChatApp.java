@@ -14,7 +14,7 @@ import org.red5.server.api.service.IPendingServiceCallback;
 import org.red5.server.api.service.IServiceCapableConnection;
 
 public class MyVideoChatApp extends ApplicationAdapter implements IPendingServiceCallback {
-	
+
 	@Override
 	public boolean appConnect(IConnection arg0, Object[] arg1) {
 
@@ -24,7 +24,9 @@ public class MyVideoChatApp extends ApplicationAdapter implements IPendingServic
 		if (conns.size() == 0 || conns.size() == 1) {
 			if (conns.size() == 1) {
 				IConnection first = conns.iterator().next();
+				System.out.println("------------------------callClient with " + stmName);
 				callClient(first, "_getVideo", new Object[] { stmName });
+				System.out.println("------------------------callClient end " );
 			}
 			return true;
 		} else {
@@ -65,7 +67,6 @@ public class MyVideoChatApp extends ApplicationAdapter implements IPendingServic
 
 	@Override
 	public void resultReceived(IPendingServiceCall ipendingservicecall) {
-		// TODO Auto-generated method stub
 
 	}
 

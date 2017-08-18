@@ -40,7 +40,6 @@ public class PathBean implements IStreamFilenameGenerator {
 	}
 
 	public boolean resolvesToAbsolutePath() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
